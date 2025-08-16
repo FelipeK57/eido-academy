@@ -74,13 +74,14 @@ export const Landing = () => {
         <section className="flex items-center justify-center min-h-svh px-4 bg-blue-50">
             <motion.div
                 initial={{
-                    opacity: 0
+                    opacity: 0,
+                    y: 50
                 }}
                 whileInView={{
-                    opacity: 1
+                    opacity: 1,
+                    y: 0
                 }}
                 transition={{
-                    type: "spring",
                     duration: 1
                 }}
                 viewport={{
@@ -127,12 +128,13 @@ export const Landing = () => {
                             <motion.div
                                 initial={{
                                     opacity: 0,
+                                    y: 50
                                 }}
                                 whileInView={{
                                     opacity: 1,
+                                    y: 0
                                 }}
                                 transition={{
-                                    type: "spring",
                                     duration: 1,
                                     delay: (index + 1) * 0.2,
                                 }}
@@ -158,15 +160,15 @@ export const Landing = () => {
                             <motion.div
                                 initial={{
                                     opacity: 0,
+                                    y: 50
                                 }}
                                 whileInView={{
                                     opacity: 1,
+                                    y: 0
                                 }}
                                 transition={{
-                                    type: "spring",
                                     duration: 1,
                                     delay: (index + 1) * 0.2,
-                                    ease: "easeIn"
                                 }}
                                 viewport={{
                                     once: true
