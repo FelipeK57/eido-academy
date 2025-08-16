@@ -112,21 +112,22 @@ export const Landing = () => {
                 <p className="text-center md:text-xl text-gray-600 max-w-lg md:max-w-2xl">Ofrecemos una experiencia de aprendizaje única con herramientas modernas y contenido de calidad.</p>
             </div>
             <div className="max-w-6xl mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {
                         characteristics.map((characteristic, index) => (
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, amount: 0.5 }}
+                            <div
                                 key={index} className="flex flex-col items-center gap-2 px-8 py-12 rounded-lg bg-white transition-all shadow-sm">
                                 <div className="flex items-center justify-center p-4 rounded-full bg-blue-100">{characteristic.icon}</div>
                                 <span className="text-lg font-semibold">{characteristic.title}</span>
                                 <span className="text-sm text-gray-600">{characteristic.text}</span>
-                            </motion.div>
+                            <div>
                         ))
                     }
-                </div>
+                </motion.div>
             </div>
         </section>
         <section className="flex flex-col gap-10 items-center justify-center py-24 px-4 bg-white">
