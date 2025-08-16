@@ -126,21 +126,10 @@ export const Landing = () => {
                     {
                         characteristics.map((characteristic, index) => (
                             <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 50
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0
-                                }}
-                                transition={{
-                                    duration: 1,
-                                    delay: (index + 1) * 0.2,
-                                }}
-                                viewport={{
-                                    once: true
-                                }}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
                                 key={index} className="flex flex-col items-center gap-2 px-8 py-12 rounded-lg bg-white border-1 border-gray-200 transition-all hover:shadow-sm">
                                 <div className="flex items-center justify-center p-4 rounded-full bg-blue-100">{characteristic.icon}</div>
                                 <span className="text-lg font-semibold">{characteristic.title}</span>
@@ -158,21 +147,10 @@ export const Landing = () => {
                     {
                         reviews.map((review, index) => (
                             <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 50
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0
-                                }}
-                                transition={{
-                                    duration: 1,
-                                    delay: (index + 1) * 0.2,
-                                }}
-                                viewport={{
-                                    once: true
-                                }}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
                                 key={index} className="flex flex-col gap-2 px-8 py-12 rounded-lg bg-white border-1 border-gray-200 transition-all hover:shadow-sm">
                                 <p>⭐⭐⭐⭐⭐</p>
                                 <span className="text-lg font-semibold">{review.user}</span>
