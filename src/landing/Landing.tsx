@@ -112,11 +112,9 @@ export const Landing = () => {
                 <p className="text-center md:text-xl text-gray-600 max-w-lg md:max-w-2xl">Ofrecemos una experiencia de aprendizaje única con herramientas modernas y contenido de calidad.</p>
             </div>
             <div className="max-w-6xl mx-auto px-4">
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
+                <motion.div initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.5 }}
-                    className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    viewport={{ once: true, amount: 0.5 }} className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {
                         characteristics.map((characteristic, index) => (
                             <div
@@ -124,7 +122,7 @@ export const Landing = () => {
                                 <div className="flex items-center justify-center p-4 rounded-full bg-blue-100">{characteristic.icon}</div>
                                 <span className="text-lg font-semibold">{characteristic.title}</span>
                                 <span className="text-sm text-gray-600">{characteristic.text}</span>
-                            <div>
+                            </div>
                         ))
                     }
                 </motion.div>
@@ -133,22 +131,20 @@ export const Landing = () => {
         <section className="flex flex-col gap-10 items-center justify-center py-24 px-4 bg-white">
             <h2 className="font-bold text-3xl px-4 text-center">Lo que dicen nuestros usuarios</h2>
             <div className="max-w-6xl mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <motion.div initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.5 }} className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {
                         reviews.map((review, index) => (
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, amount: 0.5 }}
-                                key={index} className="flex flex-col gap-2 px-8 py-12 rounded-lg bg-white transition-all shadow">
+                            <div key={index} className="flex flex-col gap-2 px-8 py-12 rounded-lg bg-white transition-all shadow">
                                 <p>⭐⭐⭐⭐⭐</p>
                                 <span className="text-lg font-semibold">{review.user}</span>
                                 <span className="text-sm text-gray-600">{review.occupation}</span>
                                 <p className="text-gray-700">"{review.review}"</p>
-                            </motion.div>
+                            </div>
                         ))
                     }
-                </div>
+                </motion.div>
             </div>
         </section>
         <section className="flex flex-col gap-8 items-center justify-center py-24 px-4 bg-blue-600 text-white">
