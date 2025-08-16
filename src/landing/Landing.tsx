@@ -55,7 +55,7 @@ export const Landing = () => {
                 damping: 60,
                 duration: 0.5
             }}
-            className="fixed w-full p-4 bg-white shadow-xs">
+            className="fixed z-10 w-full p-4 bg-white shadow-xs">
             <div className="flex items-center justify-between mx-auto max-w-6xl">
                 <div className="flex gap-2 items-center">
                     <BookOpen className="stroke-blue-600" />
@@ -126,9 +126,9 @@ export const Landing = () => {
                     {
                         characteristics.map((characteristic, index) => (
                             <motion.div
-                                initial={{ opacity: 0, y: 40 }}
+                                initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1 }}
+                                transition={{ duration: 0.5, ease: "easeInOut" }}
                                 viewport={{ once: true }}
                                 key={index} className="flex flex-col items-center gap-2 px-8 py-12 rounded-lg bg-white border-1 border-gray-200 transition-all hover:shadow-sm">
                                 <div className="flex items-center justify-center p-4 rounded-full bg-blue-100">{characteristic.icon}</div>
@@ -147,9 +147,9 @@ export const Landing = () => {
                     {
                         reviews.map((review, index) => (
                             <motion.div
-                                initial={{ opacity: 0, y: 40 }}
+                                initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1 }}
+                                transition={{ duration: 0.5, ease: "easeInOut" }}
                                 viewport={{ once: true }}
                                 key={index} className="flex flex-col gap-2 px-8 py-12 rounded-lg bg-white border-1 border-gray-200 transition-all hover:shadow-sm">
                                 <p>⭐⭐⭐⭐⭐</p>
