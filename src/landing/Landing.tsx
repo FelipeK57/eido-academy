@@ -73,20 +73,10 @@ export const Landing = () => {
         </motion.header>
         <section className="flex items-center justify-center min-h-svh px-4 bg-blue-50">
             <motion.div
-                initial={{
-                    opacity: 0,
-                    y: 50
-                }}
-                whileInView={{
-                    opacity: 1,
-                    y: 0
-                }}
-                transition={{
-                    duration: 1
-                }}
-                viewport={{
-                    once: true
-                }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
                 className="flex flex-col items-center gap-10 max-w-6xl mx-auto">
                 <div className="flex gap-1 px-4 py-2 rounded-lg bg-blue-100">
                     🚀 <span className="font-medium text-blue-600">Plataforma educativa lider</span>
@@ -126,11 +116,10 @@ export const Landing = () => {
                     {
                         characteristics.map((characteristic, index) => (
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
+                                initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, ease: "easeInOut" }}
-                                viewport={{ once: true }}
-                                key={index} className="flex flex-col items-center gap-2 px-8 py-12 rounded-lg bg-white border-1 border-gray-200 transition-all hover:shadow-sm">
+                                viewport={{ once: true, amount: 0.5 }}
+                                key={index} className="flex flex-col items-center gap-2 px-8 py-12 rounded-lg bg-white transition-all shadow-sm">
                                 <div className="flex items-center justify-center p-4 rounded-full bg-blue-100">{characteristic.icon}</div>
                                 <span className="text-lg font-semibold">{characteristic.title}</span>
                                 <span className="text-sm text-gray-600">{characteristic.text}</span>
@@ -147,11 +136,10 @@ export const Landing = () => {
                     {
                         reviews.map((review, index) => (
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
+                                initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, ease: "easeInOut" }}
-                                viewport={{ once: true }}
-                                key={index} className="flex flex-col gap-2 px-8 py-12 rounded-lg bg-white border-1 border-gray-200 transition-all hover:shadow-sm">
+                                viewport={{ once: true, amount: 0.5 }}
+                                key={index} className="flex flex-col gap-2 px-8 py-12 rounded-lg bg-white transition-all shadow">
                                 <p>⭐⭐⭐⭐⭐</p>
                                 <span className="text-lg font-semibold">{review.user}</span>
                                 <span className="text-sm text-gray-600">{review.occupation}</span>
