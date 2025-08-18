@@ -105,64 +105,7 @@ export const Landing = () => {
                 </button>
             </motion.div>
         </section>
-        {/* <section className="py-16 bg-white">
-            <div className="max-w-6xl mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div className="space-y-2">
-                        <div className="text-4xl font-bold text-blue-600"><NumberTicker className="text-4xl font-bold text-blue-600" value={2} />+</div>
-                        <div className="text-gray-600">Cursos Disponibles</div>
-                    </div>
-                    <div className="space-y-2">
-                        <div className="text-4xl font-bold text-blue-600"><NumberTicker className="text-4xl font-bold text-blue-600" value={50} />+</div>
-                        <div className="text-gray-600">Estudiantes Activos</div>
-                    </div>
-                    <div className="space-y-2">
-                        <div className="text-4xl font-bold text-blue-600"><NumberTicker className="text-4xl font-bold text-blue-600" value={95} />%</div>
-                        <div className="text-gray-600">Satisfacción</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
         <section className="flex flex-col gap-10 items-center justify-center py-24 md:px-4 bg-white">
-            <div className="flex flex-col gap-4 px-4 items-center">
-                <h2 className="font-bold text-3xl text-center">¿Cómo funcionan los cursos?</h2>
-                <p className="text-center md:text-xl text-gray-600 max-w-lg md:max-w-3xl">Nuestra metodología explicada en 3 pasos para un aprendizaje efectivo</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-8 px-4">
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    className="flex flex-col items-center gap-4 px-6">
-                    <div className="px-6 py-4 rounded-full bg-blue-200 size-fit text-blue-950 font-semibold">1</div>
-                    <p className="font-semibold text-xl">Teoría Corta</p>
-                    <p className="text-sm text-center text-gray-600 max-w-lg md:max-w-2xl">Conceptos claros y concisos. Solo lo esencial para entender cada tema sin abrumarte con información innecesaria</p>
-                </motion.div>
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    className="flex flex-col items-center gap-4 px-6">
-                    <div className="px-6 py-4 rounded-full bg-blue-600 size-fit text-white font-semibold">2</div>
-                    <p className="font-semibold text-xl">Proyecto Guiado</p>
-                    <p className="text-sm text-center text-gray-600 max-w-lg md:max-w-2xl">Aplica lo aprendido inmediatamente con proyectos paso a paso. Te guiamos en cada línea de código.</p>
-                </motion.div>
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    className="flex flex-col items-center gap-4 px-6">
-                    <div className="px-6 py-4 rounded-full bg-blue-950 size-fit text-white font-semibold">3</div>
-                    <p className="font-semibold text-xl">Proyecto Propio</p>
-                    <p className="text-sm text-center text-gray-600 max-w-lg md:max-w-2xl">Crea tu propio proyecto desde cero. Demuestra tus habilidades y construye tu portafolio profesional.</p>
-                </motion.div>
-            </div>
-        </section>
-        <section className="flex flex-col gap-10 items-center justify-center py-24 md:px-4 bg-blue-50">
             <div className="flex flex-col gap-4 px-4 items-center">
                 <h2 className="font-bold text-3xl text-center">¿Qué vas a aprender?</h2>
                 <p className="text-center md:text-xl text-gray-600 max-w-lg md:max-w-2xl">Un camino estructurado desde los fundamentos hasta convertirte en desarrollador web.</p>
@@ -189,6 +132,44 @@ export const Landing = () => {
                 </motion.div>
             </div>
         </section>
+        <section className="flex flex-col gap-10 items-center justify-center py-24 md:px-4 bg-blue-50">
+            <div className="flex flex-col gap-4 px-4 items-center">
+                <h2 className="font-bold text-3xl text-center">¿Cómo funcionan los cursos?</h2>
+                <p className="text-center md:text-xl text-gray-600 max-w-lg md:max-w-3xl">Nuestra metodología explicada en 3 pasos para un aprendizaje efectivo</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-8 px-4">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    className="flex flex-col items-center gap-4 px-6">
+                    <div className="px-6 py-4 rounded-full bg-blue-500 size-fit text-white font-semibold">1</div>
+                    <p className="font-semibold text-xl">Teoría Corta</p>
+                    <p className="text-sm text-center text-gray-600 max-w-lg md:max-w-2xl">Conceptos claros y concisos. Solo lo esencial para entender cada tema sin abrumarte con información innecesaria</p>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    className="flex flex-col items-center gap-4 px-6">
+                    <div className="px-6 py-4 rounded-full bg-blue-700 size-fit text-white font-semibold">2</div>
+                    <p className="font-semibold text-xl">Proyecto Guiado</p>
+                    <p className="text-sm text-center text-gray-600 max-w-lg md:max-w-2xl">Aplica lo aprendido inmediatamente con proyectos paso a paso. Te guiamos en cada línea de código.</p>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5, duration: 0.5 }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    className="flex flex-col items-center gap-4 px-6">
+                    <div className="px-6 py-4 rounded-full bg-blue-900 size-fit text-white font-semibold">3</div>
+                    <p className="font-semibold text-xl">Proyecto Propio</p>
+                    <p className="text-sm text-center text-gray-600 max-w-lg md:max-w-2xl">Crea tu propio proyecto desde cero. Demuestra tus habilidades y construye tu portafolio profesional.</p>
+                </motion.div>
+            </div>
+        </section>    
         <section className="flex flex-col gap-10 items-center justify-center py-24 md:px-4 bg-white">
             <div className="flex flex-col gap-4 px-4 items-center">
                 <h2 className="font-bold text-3xl text-center">¿Por qué elegir Eido Academy?</h2>
@@ -263,5 +244,24 @@ export const Landing = () => {
                 <p>&copy; 2025 Eido Academy. Construyendo el futuro, un desarrollador a la vez.</p>
             </div>
         </footer>
+                {/* <section className="py-16 bg-white">
+            <div className="max-w-6xl mx-auto px-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div className="space-y-2">
+                        <div className="text-4xl font-bold text-blue-600"><NumberTicker className="text-4xl font-bold text-blue-600" value={2} />+</div>
+                        <div className="text-gray-600">Cursos Disponibles</div>
+                    </div>
+                    <div className="space-y-2">
+                        <div className="text-4xl font-bold text-blue-600"><NumberTicker className="text-4xl font-bold text-blue-600" value={50} />+</div>
+                        <div className="text-gray-600">Estudiantes Activos</div>
+                    </div>
+                    <div className="space-y-2">
+                        <div className="text-4xl font-bold text-blue-600"><NumberTicker className="text-4xl font-bold text-blue-600" value={95} />%</div>
+                        <div className="text-gray-600">Satisfacción</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> */}
     </main >
 }
