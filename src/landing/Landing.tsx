@@ -113,7 +113,7 @@ export const Landing = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <motion.div initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.4 }} className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    viewport={{ once: true, amount: 0.2 }} className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {
                         plans.map((plan, index) => (
                             <div
@@ -178,7 +178,7 @@ export const Landing = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <motion.div initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.4 }} className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    viewport={{ once: true, amount: 0.2 }} className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {
                         characteristics.map((characteristic, index) => (
                             <div
@@ -197,7 +197,7 @@ export const Landing = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <motion.div initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.4 }} className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    viewport={{ once: true, amount: 0.2 }} className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {
                         reviews.map((review, index) => (
                             <div key={index} className="flex flex-col gap-2 px-8 py-12 rounded-lg bg-white transition-all hover:-translate-y-2 hover:shadow-lg border-1 border-gray-200">
